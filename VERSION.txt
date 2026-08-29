@@ -1,0 +1,8 @@
+project=FW-LS-W1-S3-N16R8
+product=LoongSocket LS-W1 S3 N16R8 firmware
+module_part_number=LS-W1-1119-38P-S3U-N16R8
+hardware_revision=A00
+firmware_version=0.1.0
+api_version=0.1.0
+idf_version=5.5.4
+status=prototype

@@ -1,0 +1,23 @@
+# Local build outputs
+build/
+dist/
+*.zip
+
+# Editor and OS noise
+.vscode/ipch/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python tooling
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets must never be stored in the public SDK
+*.key
+*.pem
+*.p12
+*.license
+secrets/

@@ -1,0 +1,45 @@
+#pragma once
+
+#include "ls_adc.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define LS_MCP3208_CHANNEL_COUNT LS_ADC_CHANNEL_COUNT
+#define LS_MCP3208_MAX_MOVING_AVERAGE_SAMPLES LS_ADC_MAX_MOVING_AVERAGE_SAMPLES
+#define LS_MCP3208_MAX_BURST_SAMPLES LS_ADC_MAX_BURST_SAMPLES
+#define LS_MCP3208_FLAG_RANGE_LOW LS_ADC_FLAG_RANGE_LOW
+#define LS_MCP3208_FLAG_RANGE_HIGH LS_ADC_FLAG_RANGE_HIGH
+
+typedef ls_adc_filter_t ls_mcp3208_filter_t;
+typedef ls_adc_filter_config_t ls_mcp3208_filter_config_t;
+typedef ls_adc_calibration_t ls_mcp3208_calibration_t;
+typedef ls_adc_range_t ls_mcp3208_range_t;
+typedef ls_adc_sample_t ls_mcp3208_sample_t;
+typedef ls_adc_status_t ls_mcp3208_status_t;
+typedef ls_adc_burst_t ls_mcp3208_burst_t;
+typedef ls_adc_hardware_info_t ls_mcp3208_hardware_info_t;
+
+#define ls_mcp3208_init ls_adc_init
+#define ls_mcp3208_get_hardware_info ls_adc_get_hardware_info
+#define ls_mcp3208_get_status ls_adc_get_status
+#define ls_mcp3208_reset_diagnostics ls_adc_reset_diagnostics
+#define ls_mcp3208_raw_to_millivolts ls_adc_raw_to_millivolts
+#define ls_mcp3208_read_raw ls_adc_read_raw
+#define ls_mcp3208_sample ls_adc_sample
+#define ls_mcp3208_read_raw_all ls_adc_read_raw_all
+#define ls_mcp3208_sample_all ls_adc_sample_all
+#define ls_mcp3208_read_burst ls_adc_read_burst
+#define ls_mcp3208_read_burst_all ls_adc_read_burst_all
+#define ls_mcp3208_set_filter ls_adc_set_filter
+#define ls_mcp3208_get_filter ls_adc_get_filter
+#define ls_mcp3208_reset_filter ls_adc_reset_filter
+#define ls_mcp3208_set_calibration ls_adc_set_calibration
+#define ls_mcp3208_get_calibration ls_adc_get_calibration
+#define ls_mcp3208_set_range ls_adc_set_range
+#define ls_mcp3208_get_range ls_adc_get_range
+
+#ifdef __cplusplus
+}
+#endif
